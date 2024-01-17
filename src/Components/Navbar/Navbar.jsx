@@ -62,7 +62,6 @@ const Navbar = () => {
             <li>
               <a href="/dashboard">Dashboard</a>
             </li>
-            
           </ul>
           {user ? (
             <a
