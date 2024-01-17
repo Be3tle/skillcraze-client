@@ -11,7 +11,7 @@ const Courses = () => {
 
   return (
     <div className="pb-12">
-      <h1 className="text-center py-20 text-5xl font-bold">Featured Courses</h1>
+      <h1 className="text-center py-12 lg:py-20 text-2xl lg:text-5xl font-bold">Featured Courses</h1>
 
       <div className="container mx-auto">
         <div className="home-container gap-5">
