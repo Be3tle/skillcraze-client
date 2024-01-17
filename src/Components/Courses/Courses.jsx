@@ -1,12 +1,18 @@
 import React, { useEffect, useState } from 'react';
+import useAxios from '../../Hooks/useAxios';
+import { Link } from 'react-router-dom';
 
 const Courses = () => {
   const [allCourse, setAllCourse] = useState([]);
+  const axios = useAxios();
 
   useEffect(() => {
-    fetch('../../../public/assets/data.json')
-      .then((res) => res.json())
-      .then((data) => setAllCourse(data));
+    axios
+      .get('/courses')
+      .then((res) => {
+        setAllCourse(res.data);
+      })
+      .catch((err) => console.error(err));
   }, []);
 
   return (
@@ -32,9 +38,11 @@ const Courses = () => {
                   <h2 className="py-2 font-semibold">{course.title}</h2>
                   <p>Instructor: {course.instructor}</p>
                 </div>
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 mx-3 my-2 rounded">
-                  Details
-                </button>
+                <Link to={`/details/${course._id}`}>
+                  <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 mx-3 my-2 rounded">
+                    Details
+                  </button>
+                </Link>
               </div>
             ))}
           </div>
