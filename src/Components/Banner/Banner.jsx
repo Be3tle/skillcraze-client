@@ -12,8 +12,8 @@ const Banner = () => {
       <div className="hero-overlay bg-opacity-60"></div>
       <div className="hero-content text-center text-neutral-content">
         <div className="max-w-md">
-          <h1 className="mb-5 text-5xl font-bold py-3 md:py-10 uppercase leading-tight">
-          Weave Your Future with SkillCraze!
+          <h1 className="mb-2 text-4xl font-bold py-3 md:py-10 uppercase leading-tight">
+          Weave Your Future with <span className='text-blue-400'>SkillCraze!</span>
           </h1>
 
           <Link to="/dashboard">
