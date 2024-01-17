@@ -15,7 +15,7 @@ const Courses = () => {
 
       <div className="container mx-auto">
         <div className="home-container gap-5">
-          <div className="card-container place-items-center grid grid-cols-3 gap-4">
+          <div className="card-container place-items-center grid grid-cols-1 lg:grid-cols-3 gap-4">
             {allCourse.map((course) => (
               <div
                 key={course.id}
@@ -26,9 +26,8 @@ const Courses = () => {
                   src={course.img}
                   alt=""
                 />
-                <h2 className="p-2 text-sm font-semibold">{course.title}</h2>
-                <p className="text-sm font-normal text-gray-500 px-2"></p>
-                <div className="flex justify-between px-2">
+                <div className="px-3">
+                <h2 className="py-2 font-semibold">{course.title}</h2>
                   <p>Instructor: {course.instructor}</p>
                 </div>
                 <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 mx-3 my-2 rounded">
