@@ -6,6 +6,7 @@ import {
   AccordionIcon,
   Box,
 } from '@chakra-ui/react';
+import useAxios from '../../Hooks/useAxios';
 
 const DetailsCard = ({ course }) => {
   const {
@@ -21,6 +22,34 @@ const DetailsCard = ({ course }) => {
 
     syllabus,
   } = course || {};
+
+  const axios = useAxios();
+  const { user } = useAuth();
+
+  const handleEnroll = () => {
+    if (user && user.email) {
+      const courseItem = {
+        email: user.email,
+        title: course.title,
+        instructor: course.instructor,
+        img: course.img,
+      };
+
+      console.log(taskItem);
+      axios.post('/tasks', courseItem).then((res) => {
+        console.log(res.data);
+        if (res.data.insertedId) {
+          Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Course enrolled!',
+            showConfirmButton: false,
+            timer: 2500,
+          });
+        }
+      });
+    }
+  };
 
   return (
     <section className="bg-base-800 text-gray-700">
@@ -41,7 +70,12 @@ const DetailsCard = ({ course }) => {
           <p className="text-xl py-2 font-semibold">
             Enrollment: <span className="font-normal">{enrollment_status}</span>
           </p>
-          <button className="float-left bg-blue-500 hover:bg-blue-700 text-white font-bold py-3  mt-7 rounded">Enroll</button>
+          <button
+            onClick={handleEnroll}
+            className="float-left bg-blue-500 hover:bg-blue-700 text-white font-bold py-3  mt-7 rounded"
+          >
+            Enroll
+          </button>
         </div>
       </div>
 
