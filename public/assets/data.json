@@ -1,218 +1,227 @@
 [
   {
-    "id": 1,
-    "title": "Introduction to Algorithms",
-    "description": "Explore the fascinating world of algorithms in this comprehensive course. Uncover the principles that govern problem-solving and enhance your analytical skills.",
-    "duration": "10 weeks",
-    "schedule": "Flexible",
-    "location": "Online",
-    "instructor": "Dr. Alice Smith",
-    "prerequisites": ["Basic understanding of programming concepts."],
-    "enrollment_status": "Open",
-    "img": "https://i.postimg.cc/BvCspT5v/algo.png",
-    "syllabus": [
-      {
-        "week": 1,
-        "topic": "Algorithm Basics",
-        "content": "Introduction to basic algorithmic concepts."
-      },
-      {
-        "week": 2,
-        "topic": "Sorting Algorithms",
-        "content": "Exploring various sorting algorithms."
-      }
-    ]
+      "id": 1,
+      "title": "Introduction to Algorithms",
+      "description": "Explore the fascinating world of algorithms in this comprehensive course. Uncover the principles that govern problem-solving and enhance your analytical skills.",
+      "duration": "10 weeks",
+      "schedule": "Flexible",
+      "location": "Online",
+      "instructor": "Dr. Alice Smith",
+      "prerequisites": ["Basic understanding of programming concepts."],
+      "enrollment_status": "Open",
+      "img": "https://i.postimg.cc/BvCspT5v/algo.png",
+      "likes": 128,
+      "syllabus": [
+          {
+              "week": 1,
+              "topic": "Algorithm Basics",
+              "content": "Introduction to basic algorithmic concepts."
+          },
+          {
+              "week": 2,
+              "topic": "Sorting Algorithms",
+              "content": "Exploring various sorting algorithms."
+          }
+      ]
   },
   {
-    "id": 2,
-    "title": "AWS, Cloud Computing",
-    "description": "Delve into the realm of AWS and Cloud Computing. This course equips you with the knowledge to navigate cloud services efficiently.",
-    "duration": "8 weeks",
-    "schedule": "Weekends",
-    "location": "Virtual Classroom",
-    "instructor": "Prof. John Anderson",
-    "prerequisites": ["Familiarity with basic IT concepts."],
-    "enrollment_status": "Open",
-    "img": "https://i.postimg.cc/yNKs0QZ5/aws.png",
-    "syllabus": [
-      {
-        "week": 1,
-        "topic": "Introduction to AWS",
-        "content": "Overview of Amazon Web Services."
-      },
-      {
-        "week": 2,
-        "topic": "Cloud Computing Fundamentals",
-        "content": "Understanding the basics of cloud computing."
-      }
-    ]
+      "id": 2,
+      "title": "AWS, Cloud Computing",
+      "description": "Delve into the realm of AWS and Cloud Computing. This course equips you with the knowledge to navigate cloud services efficiently.",
+      "duration": "8 weeks",
+      "schedule": "Weekends",
+      "location": "Virtual Classroom",
+      "instructor": "Prof. John Anderson",
+      "prerequisites": ["Familiarity with basic IT concepts."],
+      "enrollment_status": "Open",
+      "img": "https://i.postimg.cc/yNKs0QZ5/aws.png",
+      "likes": 93,
+      "syllabus": [
+          {
+              "week": 1,
+              "topic": "Introduction to AWS",
+              "content": "Overview of Amazon Web Services."
+          },
+          {
+              "week": 2,
+              "topic": "Cloud Computing Fundamentals",
+              "content": "Understanding the basics of cloud computing."
+          }
+      ]
   },
   {
-    "id": 3,
-    "title": "Introduction to C Programming",
-    "description": "Master the fundamentals of C programming language. This course is designed to provide a solid foundation for beginners.",
-    "duration": "6 weeks",
-    "schedule": "Evenings",
-    "location": "On-site",
-    "instructor": "Dr. Robert Johnson",
-    "prerequisites": ["None"],
-    "enrollment_status": "Open",
-    "img": "https://i.postimg.cc/sg73Qdv7/c.png",
-    "syllabus": [
-      {
-        "week": 1,
-        "topic": "Introduction to C",
-        "content": "Basic syntax and concepts of the C language."
-      },
-      {
-        "week": 2,
-        "topic": "Control Structures",
-        "content": "Understanding loops and conditional statements."
-      }
-    ]
+      "id": 3,
+      "title": "Introduction to C Programming",
+      "description": "Master the fundamentals of C programming language. This course is designed to provide a solid foundation for beginners.",
+      "duration": "6 weeks",
+      "schedule": "Evenings",
+      "location": "On-site",
+      "instructor": "Dr. Robert Johnson",
+      "prerequisites": ["None"],
+      "enrollment_status": "Open",
+      "img": "https://i.postimg.cc/sg73Qdv7/c.png",
+      "likes": 75,
+      "syllabus": [
+          {
+              "week": 1,
+              "topic": "Introduction to C",
+              "content": "Basic syntax and concepts of the C language."
+          },
+          {
+              "week": 2,
+              "topic": "Control Structures",
+              "content": "Understanding loops and conditional statements."
+          }
+      ]
   },
   {
-    "id": 4,
-    "title": "Introduction to C++ for DSA",
-    "description": "Learn C++ in the context of Data Structures and Algorithms. This course is a stepping stone for mastering advanced programming concepts.",
-    "duration": "12 weeks",
-    "schedule": "Flexible",
-    "location": "Hybrid (Online and On-site)",
-    "instructor": "Prof. Sarah Davis",
-    "prerequisites": ["Proficiency in C programming."],
-    "enrollment_status": "Open",
-    "img": "https://i.postimg.cc/GhZcmhhb/c.png",
-    "syllabus": [
-      {
-        "week": 1,
-        "topic": "C++ Basics",
-        "content": "Introduction to C++ programming language."
-      },
-      {
-        "week": 2,
-        "topic": "Data Structures in C++",
-        "content": "Implementing common data structures in C++."
-      }
-    ]
+      "id": 4,
+      "title": "Introduction to C++ for DSA",
+      "description": "Learn C++ in the context of Data Structures and Algorithms. This course is a stepping stone for mastering advanced programming concepts.",
+      "duration": "12 weeks",
+      "schedule": "Flexible",
+      "location": "Hybrid (Online and On-site)",
+      "instructor": "Prof. Sarah Davis",
+      "prerequisites": ["Proficiency in C programming."],
+      "enrollment_status": "Open",
+      "img": "https://i.postimg.cc/GhZcmhhb/c.png",
+      "likes": 112,
+      "syllabus": [
+          {
+              "week": 1,
+              "topic": "C++ Basics",
+              "content": "Introduction to C++ programming language."
+          },
+          {
+              "week": 2,
+              "topic": "Data Structures in C++",
+              "content": "Implementing common data structures in C++."
+          }
+      ]
   },
   {
-    "id": 5,
-    "title": "Database (MySQL)",
-    "description": "Dive into the world of databases with a focus on MySQL. This course empowers you to handle and manipulate data efficiently.",
-    "duration": "8 weeks",
-    "schedule": "Saturdays",
-    "location": "Virtual Classroom",
-    "instructor": "Dr. Michael White",
-    "prerequisites": ["Basic knowledge of programming."],
-    "enrollment_status": "Open",
-    "img": "https://i.postimg.cc/LXCSKmbK/db.png",
-    "syllabus": [
-      {
-        "week": 1,
-        "topic": "Introduction to Databases",
-        "content": "Overview of database concepts and MySQL."
-      },
-      {
-        "week": 2,
-        "topic": "SQL Basics",
-        "content": "Structured Query Language fundamentals."
-      }
-    ]
+      "id": 5,
+      "title": "Database (MySQL)",
+      "description": "Dive into the world of databases with a focus on MySQL. This course empowers you to handle and manipulate data efficiently.",
+      "duration": "8 weeks",
+      "schedule": "Saturdays",
+      "location": "Virtual Classroom",
+      "instructor": "Dr. Michael White",
+      "prerequisites": ["Basic knowledge of programming."],
+      "enrollment_status": "Open",
+      "img": "https://i.postimg.cc/LXCSKmbK/db.png",
+      "likes": 84,
+      "syllabus": [
+          {
+              "week": 1,
+              "topic": "Introduction to Databases",
+              "content": "Overview of database concepts and MySQL."
+          },
+          {
+              "week": 2,
+              "topic": "SQL Basics",
+              "content": "Structured Query Language fundamentals."
+          }
+      ]
   },
   {
-    "id": 6,
-    "title": "Basic Data Structures",
-    "description": "Build a strong foundation in fundamental data structures. This course enhances your problem-solving skills and prepares you for advanced topics.",
-    "duration": "6 weeks",
-    "schedule": "Weekdays",
-    "location": "Online",
-    "instructor": "Prof. Emily Turner",
-    "prerequisites": ["Basic programming knowledge."],
-    "enrollment_status": "Open",
-    "img": "https://i.postimg.cc/nzcxPXTG/ds.png",
-    "syllabus": [
-      {
-        "week": 1,
-        "topic": "Arrays and Linked Lists",
-        "content": "Understanding basic data structures."
-      },
-      {
-        "week": 2,
-        "topic": "Stacks and Queues",
-        "content": "Implementing stacks and queues."
-      }
-    ]
+      "id": 6,
+      "title": "Basic Data Structures",
+      "description": "Build a strong foundation in fundamental data structures. This course enhances your problem-solving skills and prepares you for advanced topics.",
+      "duration": "6 weeks",
+      "schedule": "Weekdays",
+      "location": "Online",
+      "instructor": "Prof. Emily Turner",
+      "prerequisites": ["Basic programming knowledge."],
+      "enrollment_status": "Open",
+      "img": "https://i.postimg.cc/nzcxPXTG/ds.png",
+      "likes": 67,
+      "syllabus": [
+          {
+              "week": 1,
+              "topic": "Arrays and Linked Lists",
+              "content": "Understanding basic data structures."
+          },
+          {
+              "week": 2,
+              "topic": "Stacks and Queues",
+              "content": "Implementing stacks and queues."
+          }
+      ]
   },
   {
-    "id": 7,
-    "title": "Problem-Solving Part",
-    "description": "Enhance your problem-solving skills with real-world scenarios. This course provides practical insights into effective solutions.",
-    "duration": "9 weeks",
-    "schedule": "Evenings",
-    "location": "Hybrid (Online and On-site)",
-    "instructor": "Dr. James Harris",
-    "prerequisites": ["Basic understanding of programming concepts."],
-    "enrollment_status": "Open",
-    "img": "https://i.postimg.cc/jdWxTJT8/ps.png",
-    "syllabus": [
-      {
-        "week": 1,
-        "topic": "Problem-Solving Strategies",
-        "content": "Introduction to effective problem-solving techniques."
-      },
-      {
-        "week": 2,
-        "topic": "Algorithmic Thinking",
-        "content": "Developing algorithmic thinking skills."
-      }
-    ]
+      "id": 7,
+      "title": "Problem-Solving Part",
+      "description": "Enhance your problem-solving skills with real-world scenarios. This course provides practical insights into effective solutions.",
+      "duration": "9 weeks",
+      "schedule": "Evenings",
+      "location": "Hybrid (Online and On-site)",
+      "instructor": "Dr. James Harris",
+      "prerequisites": ["Basic understanding of programming concepts."],
+      "enrollment_status": "Open",
+      "img": "https://i.postimg.cc/jdWxTJT8/ps.png",
+      "likes": 98,
+      "syllabus": [
+          {
+              "week": 1,
+              "topic": "Problem-Solving Strategies",
+              "content": "Introduction to effective problem-solving techniques."
+          },
+          {
+              "week": 2,
+              "topic": "Algorithmic Thinking",
+              "content": "Developing algorithmic thinking skills."
+          }
+      ]
   },
   {
-    "id": 8,
-    "title": "Software Engineering",
-    "description": "Gain expertise in Software Engineering principles and methodologies. This course lays the groundwork for building robust software systems.",
-    "duration": "5 weeks",
-    "schedule": "Flexible",
-    "location": "Online",
-    "instructor": "Prof. Laura Adams",
-    "prerequisites": ["Basic programming knowledge."],
-    "enrollment_status": "Open",
-    "img": "https://i.postimg.cc/KcpGCD6k/py.png",
-    "syllabus": [
-      {
-        "week": 1,
-        "topic": "Introduction to Software Engineering",
-        "content": "Overview of Software Engineering principles."
-      },
-      {
-        "week": 2,
-        "topic": "Requirements Engineering",
-        "content": "Understanding and gathering software requirements."
-      }
-    ]
+      "id": 8,
+      "title": "Software Engineering",
+      "description": "Gain expertise in Software Engineering principles and methodologies. This course lays the groundwork for building robust software systems.",
+      "duration": "5 weeks",
+      "schedule": "Flexible",
+      "location": "Online",
+      "instructor": "Prof. Laura Adams",
+      "prerequisites": ["Basic programming knowledge."],
+      "enrollment_status": "Open",
+      "img": "https://i.postimg.cc/KcpGCD6k/py.png",
+      "likes": 75,
+      "syllabus": [
+          {
+              "week": 1,
+              "topic": "Introduction to Software Engineering",
+              "content": "Overview of Software Engineering principles."
+          },
+          {
+              "week": 2,
+              "topic": "Requirements Engineering",
+              "content": "Understanding and gathering software requirements."
+          }
+      ]
   },
   {
-    "id": 9,
-    "title": "Introduction to OOP Python",
-    "description": "Immerse yourself in the world of Object-Oriented Programming with Python. This course explores the principles and applications of OOP.",
-    "duration": "14 weeks",
-    "schedule": "Weekends",
-    "location": "Virtual Classroom",
-    "instructor": "Prof. Mark Robinson",
-    "prerequisites": ["Basic Python programming skills."],
-    "enrollment_status": "Open",
-    "img": "https://i.postimg.cc/rmQVV1zH/swe.png",
-    "syllabus": [
-      {
-        "week": 1,
-        "topic": "Python Basics and OOP Concepts",
-        "content": "Introduction to Python programming and OOP concepts."
-      },
-      {
-        "week": 2,
-        "topic": "Inheritance and Polymorphism",
-        "content": "Exploring inheritance and polymorphism in Python."
-      }
-    ]
+      "id": 9,
+      "title": "Introduction to OOP Python",
+      "description": "Immerse yourself in the world of Object-Oriented Programming with Python. This course explores the principles and applications of OOP.",
+      "duration": "14 weeks",
+      "schedule": "Weekends",
+      "location": "Virtual Classroom",
+      "instructor": "Prof. Mark Robinson",
+      "prerequisites": ["Basic Python programming skills."],
+      "enrollment_status": "Open",
+      "img": "https://i.postimg.cc/rmQVV1zH/swe.png",
+      "likes": 118,
+      "syllabus": [
+          {
+              "week": 1,
+              "topic": "Python Basics and OOP Concepts",
+              "content": "Introduction to Python programming and OOP concepts."
+          },
+          {
+              "week": 2,
+              "topic": "Inheritance and Polymorphism",
+              "content": "Exploring inheritance and polymorphism in Python."
+          }
+      ]
   }
 ]
