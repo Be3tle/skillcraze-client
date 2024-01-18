@@ -39,7 +39,7 @@ const Courses = () => {
                   <p>Instructor: {course.instructor}</p>
                 </div>
                 <Link to={`/details/${course._id}`}>
-                  <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 mx-3 my-2 rounded">
+                  <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold px-36 py-2 mx-3 my-2 rounded">
                     Details
                   </button>
                 </Link>
