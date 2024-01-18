@@ -1,4 +1,4 @@
-import { FaHome, FaList, FaStore } from 'react-icons/fa';
+import { FaHome, FaStore } from 'react-icons/fa';
 import { NavLink, Outlet } from 'react-router-dom';
 import useAuth from '../Hooks/useAuth';
 import Enrollments from '../Components/Enrollments/Enrollments';
@@ -8,8 +8,8 @@ const Dashboard = () => {
 
   return (
     <div className="flex">
-      {/* sidebar */}
-      <div className="w-58 min-h-screen text-white bg-gray-600">
+      {/* Sidebar (Desktop) */}
+      <div className="hidden lg:block w-58 min-h-screen text-white bg-blue-400">
         <ul className="menu p-4">
           <li className="py-1">
             <div>
@@ -34,7 +34,12 @@ const Dashboard = () => {
         </ul>
       </div>
 
-      {/* content */}
+      {/* Drawer (Mobile) */}
+      <div className="lg:hidden w-58 min-h-screen text-white bg-blue-400">
+        {/* Content for mobile sidebar goes here */}
+      </div>
+
+      {/* Content */}
       <div className="flex-1">
         <div className="flex justify-center items-center flex-col">
           <h1 className="text-center uppercase py-10 tracking-widest font-bold text-xl lg:text-3xl text-black">

@@ -35,7 +35,7 @@ const Courses = () => {
         <input
           type="text"
           placeholder="Search by name or instructor"
-          className="form-input ml-5 rounded-lg border-gray-600 border-opacity-30 my-7 p-3 px-9"
+          className="form-input ml-5 rounded-lg border-blue-700 border-opacity-50 border-2 my-7 p-3 px-9"
           onChange={(e) => setSearchTerm(e.target.value)}
         />
 

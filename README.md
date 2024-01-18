@@ -72,9 +72,8 @@ Visit the live demo of SkillCraze: [SkillCraze Live](https://skill-craze.web.app
 
    Navigate to both the `skillcraze-client` and `skillcraze-server` directories and run:
 
-   ```bash
    npm install
-   ```
+
 
 3. **Setup environment variables:**
 

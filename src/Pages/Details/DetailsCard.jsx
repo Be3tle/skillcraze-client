@@ -21,6 +21,7 @@ const DetailsCard = ({ course }) => {
     schedule,
     location,
     prerequisites,
+    due_date,
 
     syllabus,
   } = course || {};
@@ -35,6 +36,7 @@ const DetailsCard = ({ course }) => {
         title: course.title,
         instructor: course.instructor,
         img: course.img,
+        due_date,
       };
 
       console.log(enrolledItem);

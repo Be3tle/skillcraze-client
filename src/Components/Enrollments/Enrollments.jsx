@@ -26,6 +26,17 @@ const Enrollments = () => {
     }
   }, [axios, user, setEnrollments]);
 
+  useEffect(() => {
+    // This useEffect will run whenever enrollments state changes
+    // It can be used to trigger a reload after deleting a course
+    if (enrollments) {
+      setLoading(true);
+      // You can add any additional logic here to handle reloading
+      // For example, you can fetch the enrollments again or perform other actions
+      setLoading(false);
+    }
+  }, [enrollments]);
+
   const handleComplete = (id) => {
     Swal.fire({
       title: 'Are you sure?',
@@ -46,6 +57,10 @@ const Enrollments = () => {
                 text: 'Successfully completed',
                 icon: 'success',
               });
+              // Update enrollments state to trigger the useEffect for reloading
+              setEnrollments(
+                enrollments.filter((enrollment) => enrollment._id !== id)
+              );
             }
           })
           .catch((error) => {
@@ -69,6 +84,7 @@ const Enrollments = () => {
                 <th></th>
                 <th>Course Title</th>
                 <th>Instructor</th>
+                <th>Due</th>
                 <th>Progress</th>
                 <th></th>
               </tr>
