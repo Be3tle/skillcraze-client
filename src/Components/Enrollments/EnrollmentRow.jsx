@@ -1,7 +1,6 @@
-import React from 'react';
-
-const EnrollmentRow = ({ enrollment }) => {
-  const { instructor, title, img } = enrollment;
+import ProgressBar from 'react-animated-progress-bar';
+const EnrollmentRow = ({ handleComplete, enrollment }) => {
+  const { _id, instructor, title, img } = enrollment;
   return (
     <tr>
       <th></th>
@@ -14,8 +13,16 @@ const EnrollmentRow = ({ enrollment }) => {
       </td>
       <td>{title}</td>
       <td>{instructor}</td>
+      <td>
+        <ProgressBar width="230" trackWidth="13" percentage="60" />
+      </td>
       <th>
-        <button className="btn bg-blue-400 text-white">Complete</button>
+        <button
+          onClick={() => handleComplete(_id)}
+          className="btn bg-blue-400 text-white"
+        >
+          Complete
+        </button>
       </th>
     </tr>
   );
