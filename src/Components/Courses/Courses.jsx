@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import useAxios from '../../Hooks/useAxios';
 import { Link } from 'react-router-dom';
+import { FcLike } from 'react-icons/fc';
 
 const Courses = () => {
   const [allCourse, setAllCourse] = useState([]);
@@ -37,6 +38,9 @@ const Courses = () => {
                 <div className="px-3">
                   <h2 className="py-2 font-semibold">{course.title}</h2>
                   <p>Instructor: {course.instructor}</p>
+                  <p className="py-2 flex gap-2">
+                    <FcLike className="text-2xl" /> {course.likes}
+                  </p>
                 </div>
                 <Link to={`/details/${course._id}`}>
                   <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold px-36 py-2 mx-3 my-2 rounded">
