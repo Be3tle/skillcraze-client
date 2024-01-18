@@ -5,6 +5,7 @@ import { FcLike } from 'react-icons/fc';
 
 const Courses = () => {
   const [allCourse, setAllCourse] = useState([]);
+  const [searchTerm, setSearchTerm] = useState('');
   const axios = useAxios();
 
   useEffect(() => {
@@ -14,7 +15,14 @@ const Courses = () => {
         setAllCourse(res.data);
       })
       .catch((err) => console.error(err));
-  }, []);
+  }, [axios]);
+
+  // Filter courses based on the search term
+  const filteredCourses = allCourse.filter(
+    (course) =>
+      course.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      course.instructor.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   return (
     <div className="pb-12">
@@ -23,9 +31,17 @@ const Courses = () => {
       </h1>
 
       <div className="container mx-auto">
+        {/* Search Input */}
+        <input
+          type="text"
+          placeholder="Search by name or instructor"
+          className="form-input ml-5 rounded-lg border-gray-600 border-opacity-30 my-7 p-3 px-9"
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+
         <div className="home-container gap-5">
           <div className="card-container place-items-center grid grid-cols-1 lg:grid-cols-3 gap-4">
-            {allCourse.map((course) => (
+            {filteredCourses.map((course) => (
               <div
                 key={course.id}
                 className="card w-96 border-2 bg-gray-50 rounded-lg p-2 mb-4 "
