@@ -1,4 +1,3 @@
-````markdown
 # SkillCraze
 
 SkillCraze is a web application that allows users to browse courses and add them to their dashboard.
@@ -66,6 +65,7 @@ Visit the live demo of SkillCraze: [SkillCraze Live](https://skill-craze.web.app
    git clone https://github.com/Be3tle/skillcraze-client.git
    git clone https://github.com/Be3tle/skillcraze-server.git
    ```
+
 ````
 
 2. **Install dependencies:**
@@ -120,3 +120,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 Feel free to customize the README file based on your specific project details and requirements. If you have additional sections or information to include, you can modify the structure accordingly.
 ```
+````
