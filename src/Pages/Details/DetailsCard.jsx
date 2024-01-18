@@ -1,11 +1,24 @@
-import { useContext, useRef, useState } from 'react';
-import Swal from 'sweetalert2';
-import { AuthContext } from '../../Provider/AuthProvider';
-import { Link } from 'react-router-dom';
+import {
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  AccordionIcon,
+  Box,
+} from '@chakra-ui/react';
 
 const DetailsCard = ({ course }) => {
-  const { instructor, title, img, description, enrollment_status, duration, schedule, location } =
-    course || {};
+  const {
+    instructor,
+    title,
+    img,
+    description,
+    enrollment_status,
+    duration,
+    schedule,
+    location,
+    prerequisites,
+  } = course || {};
 
   return (
     <section className="bg-base-800 text-gray-700">
@@ -28,7 +41,7 @@ const DetailsCard = ({ course }) => {
       </div>
 
       <div className="container pb-20 ml-12 lg:ml-32 w-9/12 lg:w-11/12">
-        <p className="text-lg lg:text-xl sm:text-center md:text-start text-justify py-2">
+        <p className="text-lg lg:text-xl sm:text-center md:text-start text-justify pb-6">
           {description}
         </p>
         <p className="text-lg font-semibold sm:text-center md:text-start text-justify py-2">
@@ -38,8 +51,15 @@ const DetailsCard = ({ course }) => {
           Schedule: {schedule}
         </p>
         <p className="text-lg font-semibold sm:text-center md:text-start text-justify py-2">
-         Location: {location}
+          Location: {location}
         </p>
+        <p className="text-lg font-semibold sm:text-center md:text-start text-justify py-2">
+          Prerequisites: {prerequisites}
+        </p>
+
+        {/* ------------------ */}
+
+       
       </div>
     </section>
   );
