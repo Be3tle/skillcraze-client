@@ -34,7 +34,7 @@ const Enrollments = () => {
       showCancelButton: true,
       confirmButtonColor: '#3085d6',
       cancelButtonColor: '#d33',
-      confirmButtonText: 'Yes, delete it!',
+      confirmButtonText: 'Yes, complete it!',
     }).then((result) => {
       if (result.isConfirmed) {
         axios
