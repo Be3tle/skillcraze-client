@@ -7,6 +7,8 @@ import {
   Box,
 } from '@chakra-ui/react';
 import useAxios from '../../Hooks/useAxios';
+import useAuth from '../../Hooks/useAuth';
+import Swal from 'sweetalert2';
 
 const DetailsCard = ({ course }) => {
   const {
@@ -28,15 +30,15 @@ const DetailsCard = ({ course }) => {
 
   const handleEnroll = () => {
     if (user && user.email) {
-      const courseItem = {
+      const enrolledItem = {
         email: user.email,
         title: course.title,
         instructor: course.instructor,
         img: course.img,
       };
 
-      console.log(taskItem);
-      axios.post('/tasks', courseItem).then((res) => {
+      console.log(enrolledItem);
+      axios.post('/enrollments', enrolledItem).then((res) => {
         console.log(res.data);
         if (res.data.insertedId) {
           Swal.fire({
