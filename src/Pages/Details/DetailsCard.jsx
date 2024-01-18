@@ -4,7 +4,7 @@ import { AuthContext } from '../../Provider/AuthProvider';
 import { Link } from 'react-router-dom';
 
 const DetailsCard = ({ course }) => {
-  const { instructor, title, img, description, enrollment_status } =
+  const { instructor, title, img, description, enrollment_status, duration, schedule, location } =
     course || {};
 
   return (
@@ -27,8 +27,19 @@ const DetailsCard = ({ course }) => {
         </div>
       </div>
 
-      <div className='container'>
-        <p className="text-lg pb-20 sm:text-center md:text-start ml-12 lg:ml-32 w-11/12">{description}</p>
+      <div className="container pb-20 ml-12 lg:ml-32 w-9/12 lg:w-11/12">
+        <p className="text-lg lg:text-xl sm:text-center md:text-start text-justify py-2">
+          {description}
+        </p>
+        <p className="text-lg font-semibold sm:text-center md:text-start text-justify py-2">
+          Duration: {duration}
+        </p>
+        <p className="text-lg font-semibold sm:text-center md:text-start text-justify py-2">
+          Schedule: {schedule}
+        </p>
+        <p className="text-lg font-semibold sm:text-center md:text-start text-justify py-2">
+         Location: {location}
+        </p>
       </div>
     </section>
   );
