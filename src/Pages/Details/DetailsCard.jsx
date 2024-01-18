@@ -19,7 +19,7 @@ const DetailsCard = ({ course }) => {
         <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
           <h1 className="text-5xl font-bold leadi sm:text-6xl">{title}</h1>
           <p className="my-4 text-lg sm:mb-12">{description}</p>
-          <p className="text-lg font-semibold"> Instructor: {instructor}</p>
+          <p className="text-xl font-semibold"> Instructor: {instructor}</p>
           
         </div>
       </div>
