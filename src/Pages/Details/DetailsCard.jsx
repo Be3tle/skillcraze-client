@@ -18,9 +18,7 @@ const DetailsCard = ({ course }) => {
     schedule,
     location,
     prerequisites,
-    week,
-    topic,
-    content,
+
     syllabus,
   } = course || {};
 
@@ -62,42 +60,24 @@ const DetailsCard = ({ course }) => {
         </p>
 
         {/* ------------------ */}
-        <h1 className='text-lg font-semibold'>Syllabus</h1>
-        <Accordion allowToggle>
-          <AccordionItem>
-            <h2>
-              <AccordionButton>
-                <Box as="span" flex="1" textAlign="left">
-                 Week {syllabus[0].week}
-                </Box>
-                <AccordionIcon />
-              </AccordionButton>
-            </h2>
-            <AccordionPanel pb={4}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </AccordionPanel>
-          </AccordionItem>
-
-          <AccordionItem>
-            <h2>
-              <AccordionButton>
-                <Box as="span" flex="1" textAlign="left">
-                  Section 2 title
-                </Box>
-                <AccordionIcon />
-              </AccordionButton>
-            </h2>
-            <AccordionPanel pb={4}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </AccordionPanel>
-          </AccordionItem>
-        </Accordion>
+        <h1 className="text-lg font-semibold pt-2">Syllabus</h1>
+        {syllabus && syllabus.length > 0 && (
+          <Accordion allowToggle>
+            {syllabus.map((weekInfo) => (
+              <AccordionItem className="py-2" key={weekInfo.week}>
+                <h2>
+                  <AccordionButton>
+                    <Box as="span" flex="1" textAlign="left">
+                      {`Week ${weekInfo.week} - ${weekInfo.topic}`}
+                    </Box>
+                    <AccordionIcon />
+                  </AccordionButton>
+                </h2>
+                <AccordionPanel pb={4}>{weekInfo.content}</AccordionPanel>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        )}
       </div>
     </section>
   );
