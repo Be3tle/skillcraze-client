@@ -18,6 +18,10 @@ const DetailsCard = ({ course }) => {
     schedule,
     location,
     prerequisites,
+    week,
+    topic,
+    content,
+    syllabus,
   } = course || {};
 
   return (
@@ -58,13 +62,13 @@ const DetailsCard = ({ course }) => {
         </p>
 
         {/* ------------------ */}
-
+        <h1 className='text-lg font-semibold'>Syllabus</h1>
         <Accordion allowToggle>
           <AccordionItem>
             <h2>
               <AccordionButton>
                 <Box as="span" flex="1" textAlign="left">
-                  Section 1 title
+                 Week {syllabus[0].week}
                 </Box>
                 <AccordionIcon />
               </AccordionButton>
