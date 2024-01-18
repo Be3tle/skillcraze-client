@@ -35,9 +35,9 @@ const DetailsCard = ({ course }) => {
         <div className="flex flex-col pt-0 justify-center p-6 rounded-sm lg:max-w-md xl:max-w-lg text-left">
           <h1 className="text-5xl font-bold pb-12 sm:text-6xl">{title}</h1>
 
-          <p className="text-xl py-2 font-semibold">Instructor: {instructor}</p>
+          <p className="text-xl py-2 font-semibold">Instructor: <span className='font-normal'>{instructor}</span></p>
           <p className="text-xl py-2 font-semibold">
-            Enrollment: {enrollment_status}
+            Enrollment: <span className='font-normal'>{enrollment_status}</span>
           </p>
         </div>
       </div>
