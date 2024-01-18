@@ -5,6 +5,7 @@ import Details from '../Pages/Details/Details';
 import Login from '../Pages/Login/Login';
 import Register from '../Pages/Login/Register';
 import Dashboard from '../Layouts/Dashboard';
+import PrivateRoute from './PrivateRoute';
 
 const router = createBrowserRouter([
   {
@@ -17,7 +18,11 @@ const router = createBrowserRouter([
       },
       {
         path: '/details/:id',
-        element: <Details></Details>,
+        element: (
+          <PrivateRoute>
+            <Details></Details>
+          </PrivateRoute>
+        ),
       },
       {
         path: '/login',
@@ -33,11 +38,13 @@ const router = createBrowserRouter([
   {
     path: '/dashboard',
 
-    element: <Dashboard></Dashboard>,
+    element: (
+      <PrivateRoute>
+        <Dashboard></Dashboard>
+      </PrivateRoute>
+    ),
 
-    children: [
-      
-    ],
+    children: [],
   },
 ]);
 
