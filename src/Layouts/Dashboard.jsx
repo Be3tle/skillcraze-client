@@ -1,7 +1,7 @@
 import { FaHome, FaList, FaStore } from 'react-icons/fa';
-import { IoCreate } from 'react-icons/io5';
-import { NavLink, Outlet, useLocation } from 'react-router-dom';
+import { NavLink, Outlet } from 'react-router-dom';
 import useAuth from '../Hooks/useAuth';
+import Enrollments from '../Components/Enrollments/Enrollments';
 
 const Dashboard = () => {
   const { user, loading } = useAuth();
@@ -37,12 +37,12 @@ const Dashboard = () => {
       {/* content */}
       <div className="flex-1">
         <div className="flex justify-center items-center flex-col">
-          <h1 className="text-center uppercase py-10 tracking-widest font-bold text-5xl text-black">
-            Welcome to dashboard
+          <h1 className="text-center uppercase py-10 tracking-widest font-bold text-xl lg:text-3xl text-black">
+            My Enrolled Courses
           </h1>
         </div>
-
-        <Outlet />  
+        <Enrollments></Enrollments>
+        <Outlet />
       </div>
     </div>
   );
