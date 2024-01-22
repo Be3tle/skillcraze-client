@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { ScrollLink } from 'react-scroll';
 
 const Banner = () => {
   return (
@@ -16,12 +16,11 @@ const Banner = () => {
             Weave Your Future with{' '}
             <span className="text-blue-400">SkillCraze!</span>
           </h1>
-
-          <Link to="/#courses">
+          <a href="/#courses">
             <button className="btn bg-blue-500 text-white hover:bg-blue-700 border-0">
               Explore Now!
             </button>
-          </Link>
+          </a>
         </div>
       </div>
     </div>
