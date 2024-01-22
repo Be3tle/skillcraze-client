@@ -25,7 +25,7 @@ const Courses = () => {
   );
 
   return (
-    <div className="pb-12">
+    <div id="courses" className="pb-12">
       <h1 className="text-center py-12 lg:py-20 text-2xl lg:text-5xl font-bold">
         Featured Courses
       </h1>
