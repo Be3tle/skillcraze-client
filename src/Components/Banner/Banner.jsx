@@ -17,7 +17,7 @@ const Banner = () => {
             <span className="text-blue-400">SkillCraze!</span>
           </h1>
 
-          <Link to="/dashboard">
+          <Link to="/#courses">
             <button className="btn bg-blue-500 text-white hover:bg-blue-700 border-0">
               Explore Now!
             </button>
