@@ -66,14 +66,13 @@ Visit the live demo of SkillCraze: [SkillCraze Live](https://skill-craze.web.app
    git clone https://github.com/Be3tle/skillcraze-server.git
    ```
 
-````
-
 2. **Install dependencies:**
 
    Navigate to both the `skillcraze-client` and `skillcraze-server` directories and run:
 
+```
    npm install
-
+```
 
 3. **Setup environment variables:**
 
@@ -94,7 +93,7 @@ Visit the live demo of SkillCraze: [SkillCraze Live](https://skill-craze.web.app
      npm start
      ```
 
-   The client runs on `http://localhost:3000`, and the server runs on `http://localhost:5000`.
+   The client runs on `http://localhost:5000`, and the server runs on `http://localhost:5000`.
 
 ## Usage
 
@@ -119,4 +118,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 Feel free to customize the README file based on your specific project details and requirements. If you have additional sections or information to include, you can modify the structure accordingly.
 ```
-````
+
+```
+
+```
