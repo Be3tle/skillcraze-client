@@ -22,10 +22,6 @@ const Navbar = () => {
       </li>
 
       <li>
-        <a href="">Blog</a>
-      </li>
-
-      <li>
         <a href="">About Us</a>
       </li>
     </div>
